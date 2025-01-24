@@ -16,6 +16,6 @@ COPY . .
 # Set the environment variable (optional; or pass it during runtime)
 # ENV GEMINI_API_KEY=your_api_key_here
 # Expose the port your application runs on
-EXPOSE 5000
+EXPOSE 8000
 # Command to run your script
 CMD ["python", "code_optimizer.py"]

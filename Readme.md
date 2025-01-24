@@ -78,20 +78,22 @@ The script will:
 # Use an official Python runtime as a base image
 FROM python:3.9-slim
 
-# Set the working directory
+# Set working directory
 WORKDIR /app
 
-# Copy the requirements file
+# Copy requirements.txt and install dependencies
 COPY requirements.txt .
-
-# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the script and other necessary files
+# Copy application code
 COPY . .
 
-# Command to run the Python script
+# Expose the port your application runs on
+EXPOSE 8000
+
+# Run your Python application
 CMD ["python", "code_optimizer.py"]
+
 ```
 
 ---

@@ -28,8 +28,7 @@ This project demonstrates how to run a Python script for code optimization and a
 /Docker_Task
 ├── code_optimizer.py       # Python script for code optimization
 ├── Dockerfile              # Docker configuration
-├── requirements.txt        # Python dependencies
-└── .env                    # Environment variables (optional)
+|── requirements.txt        # Python dependencies
 ```
 
 ---
@@ -42,10 +41,11 @@ git clone https://github.com/Hitesh203/Medify_Task
 cd Medify_Task
 ```
 
-### 2. Create the `.env` File (Optional)
-Create a `.env` file in the project directory and add your Google API key:
+### 2. Set the Environment Variable Locally
+Run this command on Windows Powwershell
 ```env
-GEMINI_API_KEY=your_api_key_here
+$env:GEMINI_API_KEY = "your_api_key_here"
+
 ```
 
 ### 3. Build the Docker Image
@@ -60,11 +60,6 @@ Run the container with your API key:
 #### Option 1: Pass API Key as an Environment Variable
 ```bash
 docker run -e GEMINI_API_KEY=your_api_key_here code-optimizer
-```
-
-#### Option 2: Use the `.env` File
-```bash
-docker run --env-file .env code-optimizer
 ```
 
 ---

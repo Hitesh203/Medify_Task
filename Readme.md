@@ -38,7 +38,7 @@ This project demonstrates how to run a Python script for code optimization and a
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Hitesh203/Medify_Task>
 cd Docker_Task
 ```
 

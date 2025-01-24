@@ -42,7 +42,7 @@ cd Medify_Task
 ```
 
 ### 2. Set the Environment Variable Locally
-Run this command on Windows Powwershell
+Run this command on Windows Powershell
 ```env
 $env:GEMINI_API_KEY = "your_api_key_here"
 

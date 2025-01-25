@@ -46,6 +46,10 @@ On Windows:
 ```bash
 set GEMINI_API_KEY=your_api_key_here
 ```
+If you encounter any error ,Set the Environment Variable Locally:
+```bash
+$env:GEMINI_API_KEY = "your_api_key_here"
+```
 
 ### 4. Run the Application
 Run the script locally:
